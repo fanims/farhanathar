@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@layer base, theme, components, utilities;
+@import "tailwindcss";
+
+@layer utilities {
+    @font-face {
+      font-family: 'SF Pro Display';
+      src:
+        url('./fonts/sf-pro/SFProDisplay-Bold.woff2') format('woff2'),
+        url('./fonts/sf-pro/SFProDisplay-Bold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'SF Pro Display';
+      src:
+        url('./fonts/sf-pro/SFProDisplay-Medium.woff2') format('woff2'),
+        url('./fonts/sf-pro/SFProDisplay-Medium.woff') format('woff');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'SF Pro Display';
+      src:
+        url('./fonts/sf-pro/SFProDisplay-Regular.woff2') format('woff2'),
+        url('./fonts/sf-pro/SFProDisplay-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'SF Pro Display';
+      src:
+        url('./fonts/sf-pro/SFProDisplay-Semibold.woff2') format('woff2'),
+        url('./fonts/sf-pro/SFProDisplay-Semibold.woff') format('woff');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+}
+
+@theme {
+  --font-text_font: SF Pro Display;
+  --font-body_font: Inter, sans-serif;
+  --color-white: #FFFFFF;
+  --color-link_color: #3076FF;
+  --color-heading_color: #051237;
+  --color-primary_color: #FBB917;
+  --color-text_color: rgba(5, 18, 55, 0.60);
+  --color-border_color: rgba(5, 18, 55, 0.08);
+  --color-text_color_dark: rgba(5, 18, 55, 0.76);
+  --color-text_light_color: rgba(5, 18, 55, 0.32);
+
+  --breakpoint-xxs: 380px;
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-1xl: 1366px;
+  --breakpoint-1xxl: 1440px;
+  --breakpoint-2xl: 1536px;
+  --breakpoint-3xl: 1600px;
+
+  --shadow-shadow_one: 3.15px 6.299px 37.795px -6.299px rgba(99, 115, 146, 0.12);
+}
