@@ -3,11 +3,7 @@ import './App.css'
 function App() {
   return (
     <>
-      <div>
-        <p className="text-lg underline text-red-800 font-bold cursor-pointer"> 
-          Click on the Vite and React logos to learn more
-        </p>
-      </div>
+      <h1 className="text-3xl font-bold underline text-text_color-dark">Farhan Athar</h1>
     </>
   )
 }
