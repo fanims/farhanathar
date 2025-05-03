@@ -66,3 +66,10 @@
 
   --shadow-shadow_one: 3.15px 6.299px 37.795px -6.299px rgba(99, 115, 146, 0.12);
 }
+
+.container {
+  @apply 
+  mx-auto
+  w-full
+  max-w-[1400px]
+}
