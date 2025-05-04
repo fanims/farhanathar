@@ -46,12 +46,11 @@
   --font-body_font: Inter, sans-serif;
   --color-white: #FFFFFF;
   --color-link_color: #3076FF;
-  --color-heading_color: #051237;
-  --color-primary_color: #FBB917;
-  --color-text_color: rgba(5, 18, 55, 0.60);
-  --color-border_color: rgba(5, 18, 55, 0.08);
-  --color-text_color_dark: rgba(5, 18, 55, 0.76);
-  --color-text_light_color: rgba(5, 18, 55, 0.32);
+  --color-body_color: #3f3f4b;
+  --color-text_color: #868795;
+  --color-primary_color: #b99c4a;
+  --color-theme_color-dark: #282830;
+  --color-theme_color-light: #3f3f4b;
 
   --breakpoint-xxs: 380px;
   --breakpoint-xs: 480px;
@@ -67,9 +66,44 @@
   --shadow-shadow_one: 3.15px 6.299px 37.795px -6.299px rgba(99, 115, 146, 0.12);
 }
 
+body {
+  @apply
+  bg-body_color
+}
 .container {
   @apply 
   mx-auto
   w-full
   max-w-[1400px]
+}
+.btn,
+.btn-two{
+  @apply 
+  px-4 
+  py-5 
+  flex 
+  gap-2 
+  text-xl
+  rounded-sm 
+  ease-in-out
+  font-medium 
+  items-center 
+  text-white 
+  duration-300 
+  min-w-[260px] 
+  justify-center 
+  font-text_font 
+  transition-all
+  cursor-pointer 
+  bg-primary_color 
+}
+.btn-two{
+  @apply 
+  border 
+  bg-transparent 
+  hover:text-white 
+  text-primary_color 
+  border-primary_color 
+  hover:bg-primary_color 
+  hover:border-transparent 
 }
